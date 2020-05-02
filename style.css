@@ -48,7 +48,7 @@ img {
     padding: 0.5rem 0rem;
 }
 
-/* .card:hover {
+.card:hover {
     animation: shimmy 0.30s infinite;
     animation-direction: alternate;
 }
@@ -60,7 +60,7 @@ img {
     100% {
         transform: translate(-10px, -20px);
     }
-} */
+}
 
 .card-title {
     background: white;
