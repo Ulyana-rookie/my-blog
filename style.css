@@ -23,11 +23,13 @@
 
 /* Make the img transform when hover */
 /* Style hovering the navbar */
+/* Make the navbar disappear on small screens */
+
 
 img {
     /* 640x960 */
     width: 340px;
-    height: 400px;
+    max-height: 500px;
 }
 
 .grid {
@@ -41,40 +43,74 @@ img {
 
 .card {
     width: 370px;
-    height: 450px;
-    border: 1px solid red;
+    height: 550px;
+    border: 1px solid black;
     padding: 0.5rem 0rem;
+}
+
+/* .card:hover {
+    animation: shimmy 0.30s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shimmy {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-10px, -20px);
+    }
+} */
+
+.card-title {
+    background: white;
+    position: relative;
+    z-index: 100;
+    margin: -20px auto;
+    width: 320px;
+    border: 4px double rgb(56, 22, 56);
+}
+
+.card-title h3 {
+    margin: 12px 4px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .card:first-child {
     border: none;
 }
 
-/* Info Square */
+/* Navbar */
 
-#info {
+#nav {
     line-height: 1.4;
     display: flex;
     justify-content: flex-end;
 }
 
-#info ul {
+#nav ul {
     align-self: center;
 }
 
-#info li {
+#nav li {
     list-style: none;
     text-align: right;
 }
 
-#info li a {
+#nav li a {
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
+    color: black;
     font-family: 'Alegreya SC', serif;
     font-size: 2rem;
     font-weight: 100;
     letter-spacing: 1px;
+}
+
+#nav a:hover {
+    border-bottom: 1px solid black;
 }
 
 #icons .fab, #icons .fas {
