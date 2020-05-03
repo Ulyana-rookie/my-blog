@@ -12,14 +12,14 @@
     margin-top: -15px;
     width: 350px;
     text-align: center;
-}
+} */
 
-.gradient {
+/* .gradient {
     border: 3px solid purple;
     border-image-slice: 1;
     border-width: 2px;
     border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-} */
+}  */
 
 /* Make the img transform when hover */
 /* Style hovering the navbar */
@@ -46,20 +46,6 @@ img {
     height: 550px;
     border: 1px solid black;
     padding: 0.5rem 0rem;
-}
-
-.card:hover {
-    animation: shimmy 0.30s infinite;
-    animation-direction: alternate;
-}
-
-@keyframes shimmy {
-    0% {
-        transform: translate(0,0);
-    }
-    100% {
-        transform: translate(-10px, -20px);
-    }
 }
 
 .card-title {
@@ -116,4 +102,10 @@ img {
 #icons .fab, #icons .fas {
     font-size: 1.2rem;
     margin: 0 8px;
+}
+
+.card-hover {
+    transition: all 0.25s;
+    transform: translate(-8px, -8px);
+    cursor: pointer;
 }
