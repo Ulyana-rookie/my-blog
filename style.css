@@ -28,7 +28,7 @@
 
 img {
     /* 640x960 */
-    width: 340px;
+    width: 360px;
     max-height: 500px;
 }
 
@@ -44,8 +44,12 @@ img {
 .card {
     width: 370px;
     height: 550px;
-    border: 1px solid black;
     padding: 0.5rem 0rem;
+}
+
+.card img {
+    border: 1px solid black;
+    padding: 6px 8px;
 }
 
 .card-title {
